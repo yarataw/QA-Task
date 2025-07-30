@@ -49,18 +49,12 @@ qa-test-suite/
 
 ## Setup Instructions
 
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd qa-test-suite
-   ```
-
-2. **Install dependencies**
+1. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Install Playwright browsers**
+2. **Install Playwright browsers**
    ```bash
    npx playwright install
    ```
@@ -154,7 +148,17 @@ The test suite uses `playwright.config.js` for configuration. Key settings inclu
 4. **Test Data Management**
    - Challenge: Managing test data across different environments
    - Solution: Dynamic data generation and cleanup utilities
+  
 
+5. **Mock API validity**
+   - Challenge: Mock API that doesn't actually validate if resources exist
+   - Solution: Update expectations to match actual behaviour 
+
+6. **Browser interacting**
+   - Challenge: Drag and drop scenario can't be simulated
+   - Solution: Use Dropzone.js library 
+  
+     
 ## Best Practices Implemented
 
 - **Separation of Concerns**: UI and API tests are separated
